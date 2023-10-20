@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish-Bosh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bish-Bosh 2.0</h1>
+    </header>
+    <main role="main">  
+        <div class="container rounded">
+            <div class="row">
+                <form class="col-md-6"> 
+                    <div class="form-group">   
+                        <label for="numberInput" class="form-label"><strong>Enter a number:</strong></label>
+                        <input type="number" class="form-control mx-2" id="numberInput" 
+                        placeholder="Enter a number from 1 to 100" min="1" max="100">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
+                <div class="col-md-6">
+                    <div class="form-group mt-4">
+                        <label for="resultText" class="form-label"><strong></strong></label>
+                        <textarea name="" id="resultText" rows="10" cols="50"></textarea>
+                    </div> 
+                </div>   
+            </div>
+        </div>    
+        <div>
+            <div class="intro">
+                <p><strong>Bish-Bosh</strong> is a numerical sequence that spans from 1 to 100, but with a playful twist. 
+                    As each number is presented, specific rules govern what is displayed.
+                </p>
+            </div>
+            <div class="content">
+                <p>
+                    When a number is divisible by 3, the term "Bish" is listed in its place. 
+                    Additionally, if a number is evenly divisible by 4, it is replaced with the term "Bosh." 
+                    In cases where a number satisfies both criteria—being divisible by 3 and 4—the special term "Bish-Bosh" is inscribed, replacing the number. 
+                </p>
+            </div>
+            <div class="listed">
+                <p><strong>The purpose is to:</strong></p>
+                <ul class="list-group">
+                    <li class="list-group-item">Master HTML and CSS</li>
+                    <li class="list-group-item">Learn Bootstrap</li>
+                    <li class="list-group-item">Practice JavaScript</li>
+                    <li class="list-group-item">Work on Responsiveness</li>
+                </ul>
+            </div>
+        </div>
+        <footer style="text-align: center;">
+            <div class="row">
+                <div class="footer-content col mx-auto">
+                    <p>&copy; Built and Designed by Xiahui Liu - All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="bishbosh.js"></script>
+</body>
+</html>
